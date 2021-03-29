@@ -1,0 +1,37 @@
+﻿<Window x:Class="FractalSettings.MainWindow"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FractalSettings"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="connectButton" Content="Отправить" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="75" Click="ConnectButton_Click"/>
+        <Label x:Name="InfoLabel" Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <xctk:ColorPicker Name="color_picker"  HorizontalAlignment="Left" Margin="111,68,0,0" VerticalAlignment="Top"  Width="119" SelectedColor="Black"  ></xctk:ColorPicker>
+        <Label Content="Цвет" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.857,2.664"/>
+        <Label Content="Период" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top"/>
+        <Label Content="Дельта" HorizontalAlignment="Left" Margin="10,127,0,0" VerticalAlignment="Top"/>
+        <Label Content="D" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top"/>
+        <Label Content="N гармоник" HorizontalAlignment="Left" Margin="10,189,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sigma" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top"/>
+        <Label Content="b" HorizontalAlignment="Left" Margin="10,251,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.758,0.617"/>
+        <Label Content="b-коэффицент" HorizontalAlignment="Left" Margin="10,282,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="T_value" PreviewTextInput="IntCheck" HorizontalAlignment="Left" Height="23" Margin="111,99,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="dt_value"  PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,131,0,0" TextWrapping="Wrap" Text="0,05" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="D_value" PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,162,0,0" TextWrapping="Wrap" Text="1,6" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="N_value" PreviewTextInput="IntCheck" HorizontalAlignment="Left" Height="23" Margin="111,192,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="sigma_value" PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,224,0,0" TextWrapping="Wrap" Text="3,3" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="b_value" PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,255,0,0" TextWrapping="Wrap" Text="2,5" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="s_value" PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,286,0,0" TextWrapping="Wrap" Text="0,005" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Режим" HorizontalAlignment="Left" Margin="10,312,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="mode_value" HorizontalAlignment="Left" Margin="111,315,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
+            <TextBlock>Кольцо</TextBlock>
+            <TextBlock>Полотно</TextBlock>
+            <TextBlock>Ничего</TextBlock>
+        </ComboBox>
+
+    </Grid>
+</Window>

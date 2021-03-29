@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1401
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FractalSettings", "FractalSettings\FractalSettings.csproj", "{31B254E7-63F0-476C-8CCF-C2BADC99DE6A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A4D5675E-3B98-4E51-9706-626034E1DEC8}"
+	ProjectSection(SolutionItems) = preProject
+		FunctionParams.cs = FunctionParams.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31B254E7-63F0-476C-8CCF-C2BADC99DE6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31B254E7-63F0-476C-8CCF-C2BADC99DE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31B254E7-63F0-476C-8CCF-C2BADC99DE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31B254E7-63F0-476C-8CCF-C2BADC99DE6A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1D4587B-F2E1-409C-9D46-27911D40523E}
+	EndGlobalSection
+EndGlobal
