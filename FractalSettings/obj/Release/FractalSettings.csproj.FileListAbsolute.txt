@@ -34,3 +34,4 @@ C:\Users\shan2\source\repos\FractalSettings\FractalSettings\obj\Release\FractalS
 C:\Users\shan2\source\repos\FractalSettings\FractalSettings\obj\Release\FractalSettings.csproj.CopyComplete
 C:\Users\shan2\source\repos\FractalSettings\FractalSettings\obj\Release\FractalSettings.exe
 C:\Users\shan2\source\repos\FractalSettings\FractalSettings\obj\Release\FractalSettings.pdb
+C:\Users\shan2\source\repos\FractalSettings\FractalSettings\obj\Release\FractalSettings.csprojAssemblyReference.cache

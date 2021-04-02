@@ -20,18 +20,22 @@
         <Label Content="b" HorizontalAlignment="Left" Margin="10,251,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.758,0.617"/>
         <Label Content="b-коэффицент" HorizontalAlignment="Left" Margin="10,282,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="T_value" PreviewTextInput="IntCheck" HorizontalAlignment="Left" Height="23" Margin="111,99,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="dt_value"  PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,131,0,0" TextWrapping="Wrap" Text="0,05" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="D_value" PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,162,0,0" TextWrapping="Wrap" Text="1,6" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="dt_value"  PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,131,0,0" TextWrapping="Wrap" Text="0.05" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="D_value" PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,162,0,0" TextWrapping="Wrap" Text="1.6" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="N_value" PreviewTextInput="IntCheck" HorizontalAlignment="Left" Height="23" Margin="111,192,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="sigma_value" PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,224,0,0" TextWrapping="Wrap" Text="3,3" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="b_value" PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,255,0,0" TextWrapping="Wrap" Text="2,5" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="s_value" PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,286,0,0" TextWrapping="Wrap" Text="0,005" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="sigma_value" PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,224,0,0" TextWrapping="Wrap" Text="3.3" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="b_value" PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,255,0,0" TextWrapping="Wrap" Text="2.5" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="s_value" PreviewTextInput="DoubleCheck" HorizontalAlignment="Left" Height="23" Margin="111,286,0,0" TextWrapping="Wrap" Text="0.005" VerticalAlignment="Top" Width="120"/>
         <Label Content="Режим" HorizontalAlignment="Left" Margin="10,312,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="mode_value" HorizontalAlignment="Left" Margin="111,315,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
             <TextBlock>Кольцо</TextBlock>
             <TextBlock>Полотно</TextBlock>
             <TextBlock>Ничего</TextBlock>
         </ComboBox>
+        <Slider HorizontalAlignment="Left" x:Name="distSlider" Margin="111,345,0,0" VerticalAlignment="Top" Maximum="0.25" SmallChange="0.01" RenderTransformOrigin="-1.044,-0.25" Width="80" TickPlacement="BottomRight" 
+AutoToolTipPlacement="BottomRight" TickFrequency="10" Value="0.08" AutoToolTipPrecision="2"  />
+        <TextBox x:Name="discDist_value" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="196,343,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="35"  Text="{Binding ElementName=distSlider,Path=Value, StringFormat=n2, UpdateSourceTrigger=PropertyChanged}" RenderTransformOrigin="0.507,-0.296" />
+        <Label Content="Расстояние" HorizontalAlignment="Left" Margin="10,343,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

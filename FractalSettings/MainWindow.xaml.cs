@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -29,6 +31,8 @@ namespace FractalSettings
         public MainWindow()
         {
             InitializeComponent();
+            Thread.CurrentThread.CurrentCulture = CultureInfo.GetCultureInfo("en-US");
+
             infoLabel = (Label)this.FindName("InfoLabel");
             //infoLabel.Content = "No connection";
         }
@@ -58,6 +62,8 @@ namespace FractalSettings
                 writer.Write(Double.Parse(b_value.Text));
                 writer.Write(Double.Parse(s_value.Text));
                 writer.Write(  mode_value.SelectedIndex);
+                writer.Write(Double.Parse(discDist_value.Text));
+
 
                 writer.Flush();
 
@@ -85,7 +91,7 @@ namespace FractalSettings
             }
         }
 
-        private static readonly Regex regexInt = new Regex("[^0-9.-]+"); //regex that matches disallowed text
+        private static readonly Regex regexInt = new Regex("[^0-9-]+"); //regex that matches disallowed text
         private void IntCheck(object sender, TextCompositionEventArgs e)
         {
             e.Handled = regexInt.IsMatch(e.Text);
@@ -95,13 +101,13 @@ namespace FractalSettings
         {
             var ue = e.Source as TextBox;
             Regex regex;
-            if (ue.Text.Contains(","))
+            if (ue.Text.Contains("."))
             {
                 regex = new Regex("[^0-9]+");
             }
             else
             {
-                regex = new Regex("[^0-9,]+");
+                regex = new Regex("[^0-9.]+");
             }
 
             e.Handled = regex.IsMatch(e.Text);
