@@ -6,10 +6,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FractalSettings"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        ResizeMode="NoResize" 
+        Title="MainWindow" Height="450" Width="261.6">
     <Grid>
         <Button x:Name="connectButton" Content="Отправить" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Width="75" Click="ConnectButton_Click"/>
-        <Label x:Name="InfoLabel" Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="InfoLabel" Content="Жду ввод" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
         <xctk:ColorPicker Name="color_picker"  HorizontalAlignment="Left" Margin="111,68,0,0" VerticalAlignment="Top"  Width="119" SelectedColor="Black"  ></xctk:ColorPicker>
         <Label Content="Цвет" HorizontalAlignment="Left" Margin="10,65,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.857,2.664"/>
         <Label Content="Период" HorizontalAlignment="Left" Margin="10,96,0,0" VerticalAlignment="Top"/>
@@ -30,6 +31,7 @@
         <ComboBox x:Name="mode_value" HorizontalAlignment="Left" Margin="111,315,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0">
             <TextBlock>Кольцо</TextBlock>
             <TextBlock>Полотно</TextBlock>
+            <TextBlock>Штора</TextBlock>
             <TextBlock>Ничего</TextBlock>
         </ComboBox>
         <Slider HorizontalAlignment="Left" x:Name="distSlider" Margin="111,345,0,0" VerticalAlignment="Top" Maximum="0.25" SmallChange="0.01" RenderTransformOrigin="-1.044,-0.25" Width="80" TickPlacement="BottomRight" 
@@ -37,7 +39,7 @@ AutoToolTipPlacement="BottomRight" TickFrequency="10" Value="0.08" AutoToolTipPr
         <TextBox x:Name="discDist_value" IsReadOnly="True" HorizontalAlignment="Left" Height="23" Margin="196,343,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="35"  Text="{Binding ElementName=distSlider,Path=Value, StringFormat=n2, UpdateSourceTrigger=PropertyChanged}" RenderTransformOrigin="0.507,-0.296" />
         <Label Content="Расстояние" HorizontalAlignment="Left" Margin="10,343,0,0" VerticalAlignment="Top"/>
         <Label Content="Альфа" HorizontalAlignment="Left" Margin="9,370,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="alpha_value" PreviewTextInput="IntCheck" HorizontalAlignment="Left" Height="23" Margin="110,374,0,0" TextWrapping="Wrap" Text="0.005" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="alpha_value" PreviewTextInput="IntCheck" HorizontalAlignment="Left" Height="23" Margin="110,374,0,0" TextWrapping="Wrap" Text="128" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
