@@ -63,6 +63,7 @@ namespace FractalSettings
                 writer.Write(Double.Parse(s_value.Text));
                 writer.Write(  mode_value.SelectedIndex);
                 writer.Write(Double.Parse(discDist_value.Text));
+                writer.Write(Int32.Parse(alpha_value.Text));
 
 
                 writer.Flush();
