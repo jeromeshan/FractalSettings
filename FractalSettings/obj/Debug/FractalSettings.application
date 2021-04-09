@@ -7,14 +7,14 @@
     <framework targetVersion="4.6.1" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="FractalSettings.exe.manifest" size="15769">
+    <dependentAssembly dependencyType="install" codebase="FractalSettings.exe.manifest" size="15751">
       <assemblyIdentity name="FractalSettings.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>dzSELPqkIWWbHxLdpO82dQgqeEqX/+UWBlgIlx35d3A=</dsig:DigestValue>
+        <dsig:DigestValue>Z5UuByjj1W2ohvIp2Hm5n4Cy4fLgFVhK6oiUyZ3LpmI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -40,7 +40,7 @@ namespace FractalSettings
         private void ConnectButton_Click(object sender, RoutedEventArgs e)
         {
         
-                Int32 port = 2200;
+                Int32 port = 10500;
             TcpClient client = null;
             BinaryWriter writer = null;
             BinaryReader reader = null;
